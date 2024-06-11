@@ -272,14 +272,17 @@
 <script > 
 window.onload = function() {
     function showWarning() {
-        if (window.innerWidth < 600) { // Adjust the value to your preferred breakpoint
-            document.getElementById('warning').style.display = 'block';
-            document.body.classList.add('no-scroll');
-        } else {
-            document.getElementById('warning').style.display = 'none';
-            document.body.classList.remove('no-scroll');
-        }
+    const width = window.innerWidth;
+   
+    if (width <= 1300) { // Adjust the value to your preferred breakpoint
+        document.getElementById('warning').style.display = 'block';
+        document.body.classList.add('no-scroll');
+    } else {
+        document.getElementById('warning').style.display = 'none';
+        document.body.classList.remove('no-scroll');
     }
+}
+
 
    
     showWarning();
