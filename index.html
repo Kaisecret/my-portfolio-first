@@ -264,62 +264,65 @@
          </div>
         </section>
         <script src="https://unpkg.com/scrollreveal"></script> 
-<script>
-    let sections = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('nav a');
 
-    window.onscroll = () => {
-        let top = window.scrollY;
+       
+<script > 
+  
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('nav a');
 
-        sections.forEach(sec => {
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
+window.onscroll = () => {
+    let top = window.scrollY;
 
-            if (top >= offset && top < offset + height) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').includes(id)) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
-    };
+    sections.forEach(sec => {
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-        ScrollReveal({ reset: true });
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(id)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+};
+
+    ScrollReveal({ reset: true });
 
 ScrollReveal().reveal(".show-once", {
-  reset: false
+reset: false
 });
-        ScrollReveal().reveal(".picture1", {
-            duration: 2000,
-            move: 0
-          });
-          ScrollReveal().reveal(".picture2", {
-            duration: 2000,
-            move: 0
-          });
-         
-          ScrollReveal().reveal(".cards", {
-            duration: 2000,
-            scale: 0.85,
-            move: 0
+    ScrollReveal().reveal(".picture1", {
+        duration: 2000,
+        move: 0
+      });
+      ScrollReveal().reveal(".picture2", {
+        duration: 2000,
+        move: 0
+      });
+     
+      ScrollReveal().reveal(".cards", {
+        duration: 2000,
+        scale: 0.85,
+        move: 0
 });
 ScrollReveal().reveal(".sklls", {
-            duration: 2000,
-            scale: 0.85,
-            move: 0
+        duration: 2000,
+        scale: 0.85,
+        move: 0
 });
 ScrollReveal().reveal(".tools", {
-            duration: 2000,
-            scale: 0.85,
-            move: 0
+        duration: 2000,
+        scale: 0.85,
+        move: 0
 });
 ScrollReveal().reveal(".sproject", {
-            duration: 2000,
-            scale: 0.85,
-            move: 0
+        duration: 2000,
+        scale: 0.85,
+        move: 0
 });
 </script>
 </body>
