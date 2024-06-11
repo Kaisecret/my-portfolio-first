@@ -972,6 +972,11 @@ input::placeholder{
     padding: 20px;
     border: 1px solid black;
     z-index: 9999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 100px;
+    
 }
 body.no-scroll {
     overflow: hidden;
