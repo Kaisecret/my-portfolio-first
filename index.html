@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="warning">
+        <p>Sorry, this website is not available in phone or tablet mode.</p>
+    </div>
         <header>
           <div class="content"> 
                 <h2 class="logo"> <a href="#home">KHING</a></h2>
@@ -267,7 +270,24 @@
 
        
 <script > 
+window.onload = function() {
+    function showWarning() {
+        if (window.innerWidth < 600) { // Adjust the value to your preferred breakpoint
+            document.getElementById('warning').style.display = 'block';
+            document.body.classList.add('no-scroll');
+        } else {
+            document.getElementById('warning').style.display = 'none';
+            document.body.classList.remove('no-scroll');
+        }
+    }
+
+   
+    showWarning();
+
   
+    window.addEventListener('resize', showWarning);
+};
+
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('nav a');
 

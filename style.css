@@ -962,3 +962,18 @@ input::placeholder{
     font-weight: bold;
     color: #0f1b51;
 }
+#warning {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 9999;
+}
+body.no-scroll {
+    overflow: hidden;
+    pointer-events: none; /* Disable all click events */
+}
