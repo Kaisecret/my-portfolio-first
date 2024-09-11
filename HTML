@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borrowing of Books System Flowchart</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+    .flowchart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        margin: 20px;
+    }
+    .flowchart div {
+        margin: 10px;
+        padding: 10px 20px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        width: fit-content;
+        text-align: center;
+    }
+    .arrow {
+        margin: 5px;
+        font-size: 2em;
+    }
+    .branch {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .branch div {
+        flex: 1;
+        margin: 10px;
+    }
+    .branch .connector {
+        margin-top: -15px;
+    }
+</style>
+</head>
+<body>
+
+<div class="flowchart">
+    <div>Landing Page</div>
+    <div class="arrow">↓</div>
+    <div class="branch">
+        <div>
+            <div>Borrower Button</div>
+            <div class="arrow">↓</div>
+            <div>Create Account / Login</div>
+            <div class="arrow">↓</div>
+            <div>Borrow Books</div>
+            <div class="arrow">↓</div>
+            <div>Logout</div>
+        </div>
+        <div class="connector"></div>
+        <div>
+            <div>Admin Button</div>
+            <div class="arrow">↓</div>
+            <div>View Borrowed Books</div>
+            <div class="arrow">↓</div>
+            <div>Return Books</div>
+            <div class="arrow">↓</div>
+            <div>Monitor Transactions</div>
+            <div class="arrow">↓</div>
+            <div>Logout</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
